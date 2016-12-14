@@ -29,9 +29,7 @@
                    ( def n (p/parse :en$core ;; core configuration for English ; see also :fr$core, :es$core, :cn$core
                      text
                      [:time]) )
-                     (println n)
-                     (println text)
-                    (generate-string n ) )
+                    (generate-string n {:pretty true}))
 
             (POST* "/temperature" []
                    :return      String
@@ -40,7 +38,7 @@
                    ( def n (p/parse :en$core ;; core configuration for English ; see also :fr$core, :es$core, :cn$core
                      text
                      [:temperature]) )
-                    (generate-string n ) )
+                    (generate-string n {:pretty true}) )
 
             (POST* "/number" []
                    :return      String
@@ -49,7 +47,7 @@
                    ( def n (p/parse :en$core ;; core configuration for English ; see also :fr$core, :es$core, :cn$core
                      text
                      [:number]) )
-                    (generate-string n ) )
+                    (generate-string n {:pretty true}) )
 
             (POST* "/ordinal" []
                    :return      String
@@ -58,7 +56,7 @@
                    ( def n (p/parse :en$core ;; core configuration for English ; see also :fr$core, :es$core, :cn$core
                      text
                      [:ordinal]) )
-                    (generate-string n ) )
+                    (generate-string n {:pretty true}) )
 
             (POST* "/distance" []
                    :return      String
@@ -67,7 +65,7 @@
                    ( def n (p/parse :en$core ;; core configuration for English ; see also :fr$core, :es$core, :cn$core
                      text
                      [:distance]) )
-                    (generate-string n ) )
+                    (generate-string n {:pretty true}) )
 
             (POST* "/volume" []
                    :return      String
@@ -76,7 +74,7 @@
                    ( def n (p/parse :en$core ;; core configuration for English ; see also :fr$core, :es$core, :cn$core
                      text
                      [:volume]) )
-                    (generate-string n ) )
+                    (generate-string n {:pretty true}) )
 
             (POST* "/amount-of-money" []
                    :return      String
@@ -85,7 +83,7 @@
                    ( def n (p/parse :en$core ;; core configuration for English ; see also :fr$core, :es$core, :cn$core
                      text
                      [:amount-of-money]) )
-                    (generate-string n ) )
+                    (generate-string n {:pretty true}) )
 
             (POST* "/duration" []
                    :return      String
@@ -94,7 +92,7 @@
                    ( def n (p/parse :en$core ;; core configuration for English ; see also :fr$core, :es$core, :cn$core
                      text
                      [:duration]) )
-                    (generate-string n ) )
+                    (generate-string n {:pretty true}) )
 
             (POST* "/email" []
                    :return      String
@@ -103,7 +101,7 @@
                    ( def n (p/parse :en$core ;; core configuration for English ; see also :fr$core, :es$core, :cn$core
                      text
                      [:email]) )
-                    (generate-string n ) )
+                    (generate-string n {:pretty true}) )
 
           (POST* "/phone-number" []
                  :return      String
@@ -112,7 +110,7 @@
                  ( def n (p/parse :en$core ;; core configuration for English ; see also :fr$core, :es$core, :cn$core
                    text
                    [:phone-number]) )
-                  (generate-string n ) )
+                  (generate-string n {:pretty true}) )
 
             (POST* "/url" []
                    :return      String
@@ -121,7 +119,7 @@
                    ( def n (p/parse :en$core ;; core configuration for English ; see also :fr$core, :es$core, :cn$core
                      text
                      [:url]) )
-                    (generate-string n ) )
+                    (generate-string n {:pretty true}) )
 
 
 

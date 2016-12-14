@@ -17,10 +17,10 @@
                  [bouncer "0.3.3"]
                  [prone "0.8.2"]
                  [org.clojure/tools.nrepl "0.2.10"]
-                 [cheshire "5.5.0"]
+                 [cheshire "5.6.3"]
                  [ring-server "0.4.0"]
                  [metosin/compojure-api "0.21.0"]
-                 [wit/duckling "0.4.21"]
+                 [wit/duckling "0.3.9"]
                  [metosin/ring-swagger-ui "2.1.1-M2"]]
 
   :min-lein-version "2.0.0"
